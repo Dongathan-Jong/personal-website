@@ -132,3 +132,15 @@ button:focus-visible {
   font-weight: 800;
   font-style: normal;
 }
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+}
