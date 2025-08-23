@@ -129,6 +129,9 @@ function App() {
 
       <div className="bg-black w-full flex flex-col items-center justify-center">
         <p className="outfit text-[1vw] text-[#575757]">Made with ❤️ by Jonathan Dong</p>
+        <div className="flex items-center justify-center">
+          
+        </div>
       </div>
     </>
   )
