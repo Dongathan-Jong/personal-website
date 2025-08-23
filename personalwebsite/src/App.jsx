@@ -78,7 +78,7 @@ function App() {
               <img src="/assets/pictures/me.jpg" alt="Me!" className="w-9/10 rounded-3xl"></img>
             </div>
             <div className="bg-[#4e4e4eaa] rounded-3xl items-center justify-center col-span-2 mr-20">
-              <p className="montserrat mr-10 ml-10 text-[1.5vw] mt-8">Hey! My name is Jonathan Dong, an aspiring developer from Canada! </p>
+              <p className="montserrat mr-10 ml-10 text-[1.5vw] mt-8">Hey! My name is Jonathan Dong, an aspiring developer and engineer from Canada! </p>
               <br></br>
               <p className="montserrat mr-10 ml-10 text-[1.5vw]">I am currently studying at{' '}  
                 <a href="https://carleton.ca/" target="_blank" className="!underline !text-[#919191] hover:!text-red-700 transition">Carleton University</a> for a Bachelors in Aerospace Engineering.</p>
@@ -168,9 +168,8 @@ function App() {
             <p className="outfit text-[1vw] ml-2 mr-2 mb-2">A fully custom designed 3D printer that flew to Denver, CO for RMRRF! Under $300 and fully auto-ejects prints.</p>
           </div>
         </div>
-      </div>
 
-      <div className="bg-black w-full flex flex-col items-center justify-center">
+        <div className="bg-black w-full flex flex-col items-center justify-center mt-15">
         <p className="outfit text-[1vw] text-[#575757]">Made with ❤️ by Jonathan Dong</p>
         <div className="flex items-center justify-center mt-2">
           <div className="w-[5vw] h-[5vw] rounded-full bg-[#575757] flex items-center justify-center">
@@ -190,6 +189,9 @@ function App() {
           </div>
         </div>
       </div>
+      </div>
+
+      
     </>
   )
 }
