@@ -1,15 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useState , useEffect } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showNav, setShowNav] = useState(false)
+  const [activeSection, setActiveSection] = useState('home');
+
+  useEffect(() => {
+  const sectionIds = ['home', 'about', 'skills', 'projects'];
+  const handleScroll = () => {
+    const scrollPos = window.scrollY + 120; // 120px offset for navbar height
+    let current = 'home';
+    for (let i = 0; i < sectionIds.length; i++) {
+      const id = sectionIds[i];
+      const el = document.getElementById(id);
+      if (el) {
+        if (el.offsetTop <= scrollPos) {
+          current = id;
+        }
+      }
+    }
+    setActiveSection(current);
+
+    // Show nav logic
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      const rect = aboutSection.getBoundingClientRect();
+      setShowNav(rect.top <= 0);
+    }
+  };
+  window.addEventListener('scroll', handleScroll);
+  handleScroll();
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
 
   return (
     <>
+   
+    <nav className={`fixed w-full top-0 left-0 z-50 flex items-center justify-between px-9 py-4 transition-opacity duration-500 ease-in-out ${showNav ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+    aria-hidden={!showNav}
+    >
+      <div className="text-white font-bold text-xl">
+        <a href="#home" className="poppins-black !text-white hover:!text-red-400 transition">
+          <img src="/assets/pictures/home.png" alt="Home" className="w-[1vw]"/>
+        </a>
+      </div>
+      <div className="flex items-center justify-center">
+        <a href="#about" className={`poppins-black !text-white hover:!text-red-400 transition mr-1 ml-1 bg-background-blur ${activeSection === 'about' ? 'underline underline-offset-8 decoration-red-400' : ''}`}>About</a>
+        <a href="#skills" className={`poppins-black !text-white hover:!text-red-400 transition mr-1 ml-1 bg-background-blur ${activeSection === 'skills' ? 'underline underline-offset-8 decoration-red-400' : ''}`}>Skills</a>
+        <a href="#projects" className={`poppins-black !text-white hover:!text-red-400 transition mr-1 ml-1 bg-background-blur ${activeSection === 'projects' ? 'underline underline-offset-8 decoration-red-400' : ''}`}>Projects</a>
+      </div>
+    </nav>
+    
       
-      <div className="bg-black h-screen w-full flex flex-col items-center justify-center ">
+      <div id="home" className="bg-black h-screen w-full flex flex-col items-center justify-center ">
         <div className="bg-red-500 flex flex-col justify-end items-center justify-center h-3/5 w-4/5 rounded-3xl nametagshadow">
         <div className="self-auto">
           <h1 className="poppins-black mt-4 text-[3vw]">Hello!</h1>
@@ -27,7 +70,7 @@ function App() {
   
       
 
-      <div className="bg-black w-full min-h-screen flex flex-col items-center justify-center">
+      <div id="about"className="bg-black w-full min-h-screen flex flex-col items-center justify-center">
         <p className="biorhyme-expanded-extrabold text-[4vw] mt-4">About Me</p>
         <div className="bg-[#4e4e4eaa] w-[90vw] h-[90%] rounded-3xl items-center justify-center flex flex-col mt-8 aboutshadow">
           <div className="grid grid-cols-3 h-[90%] gap-7 w-[95vw] mt-8 mb-7 mt-7">
@@ -56,7 +99,7 @@ function App() {
   
       
 
-      <div className="bg-black w-full min-h-screen flex flex-col items-center justify-center mt-20">
+      <div id="skills"className="bg-black w-full min-h-screen flex flex-col items-center justify-center mt-20">
         <div className="bg-black flex flex-col w-screen h-[1000px] items-center justify-center">
           <p className="biorhyme-expanded-extrabold text-[10vw] mt-4">Skills</p>
           <p className="outfit mb-4">Hardware</p>
@@ -99,7 +142,7 @@ function App() {
       </div>
 
 
-      <div className="bg-black w-full min-h-screen flex flex-col items-center justify-center">
+      <div id="projects" className="bg-black w-full min-h-screen flex flex-col items-center justify-center">
         <p className="biorhyme-expanded-extrabold text-[6vw] mt-4">Projects</p>
         <div className="grid grid-cols-3 gap-30 h-[24vw] w-[90vw] justify-items-center mt-4">
           <div className="bg-[#171717] w-[30vw] rounded-3xl items-center justify-center flex flex-col projectshadow">
@@ -129,8 +172,22 @@ function App() {
 
       <div className="bg-black w-full flex flex-col items-center justify-center">
         <p className="outfit text-[1vw] text-[#575757]">Made with ❤️ by Jonathan Dong</p>
-        <div className="flex items-center justify-center">
-          
+        <div className="flex items-center justify-center mt-2">
+          <div className="w-[5vw] h-[5vw] rounded-full bg-[#575757] flex items-center justify-center">
+            <a href="http://github.com/Dongathan-Jong/" target="_blank" className="flex items-center justify-center">
+              <img src="/assets/pictures/github.png" alt="GitHub" className="w-3/5 h-3/5 object-contain"/>
+            </a>
+          </div>
+          <div className="w-[5vw] h-[5vw] rounded-full bg-[#575757] flex items-center justify-center ml-2 mr-2">
+            <a href="https://www.linkedin.com/in/jonathan-dong-/" target="_blank" className="flex items-center justify-center">
+              <img src="/assets/pictures/linkedin.png" alt="LinkedIn" className="w-3/5 h-3/5 object-contain"/>
+            </a>
+          </div>
+          <div className="w-[5vw] h-[5vw] rounded-full bg-[#575757] flex items-center justify-center">
+            <a href="mailto:jonathandong2020@gmail.com" target="_blank" className="flex items-center justify-center">
+              <img src="/assets/pictures/mail.png" alt="Email" className="w-3/5 h-3/5 object-contain"/>
+            </a>
+          </div>
         </div>
       </div>
     </>
