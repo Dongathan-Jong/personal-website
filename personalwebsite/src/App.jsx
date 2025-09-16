@@ -78,7 +78,7 @@ function App() {
               <img src="/assets/pictures/me.jpg" alt="Me!" className="w-9/10 rounded-3xl"></img>
             </div>
             <div className="bg-[#4e4e4eaa] rounded-3xl items-center justify-center col-span-2 mr-20">
-              <p className="montserrat mr-10 ml-10 text-[1.5vw] mt-8">Hey! My name is Jonathan Dong, an aspiring developer and engineer from Canada! </p>
+              <p className="montserrat mr-10 ml-10 text-[1.5vw] mt-8">Hey! My name is Jonathan Dong, an aspiring developer from Canada! </p>
               <br></br>
               <p className="montserrat mr-10 ml-10 text-[1.5vw]">I am currently studying at{' '}  
                 <a href="https://carleton.ca/" target="_blank" className="!underline !text-[#919191] hover:!text-red-700 transition">Carleton University</a> for a Bachelors in Aerospace Engineering.</p>
@@ -102,7 +102,7 @@ function App() {
       <div id="skills"className="bg-black w-full min-h-screen flex flex-col items-center justify-center mt-20">
         <div className="bg-black flex flex-col w-screen h-[1000px] items-center justify-center">
           <p className="biorhyme-expanded-extrabold text-[10vw] mt-4">Skills</p>
-          <p className="outfit mb-4">Hardware</p>
+          <p className="outfit mb-2">Hardware</p>
           <div className="grid grid-cols-5 gap-8 h-200">
             <div className="bg-[#34b1eb] w-[12vw] h-[12vw] rounded-3xl items-center justify-center flex skillshadow">
               <img src="/assets/pictures/arduino.png" alt="Arduino" className="w-4/5 h-4/5 object-contain rounded-2xl"/>
@@ -120,7 +120,7 @@ function App() {
               <img src="/assets/pictures/f360.png" alt="Fusion 360" className="w-4/5 h-4/5 object-contain rounded-2xl"/>
             </div>
           </div>
-          <p className="outfit mb-4">Software</p>
+          <p className="outfit mb-2">Software</p>
           <div className="grid grid-cols-5 gap-8 h-200">
             <div className="bg-[#00067d] w-[12vw] h-[12vw] rounded-3xl items-center justify-center flex skillshadow">
               <img src="/assets/pictures/java.png" alt="Java" className="w-4/5 h-4/5 object-contain rounded-2xl"/>
