@@ -71,7 +71,7 @@ function App() {
       
 
       <div id="about"className="bg-black w-full min-h-screen flex flex-col items-center justify-center">
-        <p className="biorhyme-expanded-extrabold text-[4vw] mt-4">About Me</p>
+        <p className="biorhyme-expanded-extrabold text-[4vw] mt-4"></p>
         <div className="bg-[#4e4e4eaa] w-[90vw] h-[90%] rounded-3xl items-center justify-center flex flex-col mt-8 aboutshadow">
           <div className="grid grid-cols-3 h-[90%] gap-7 w-[95vw] mt-8 mb-7 mt-7">
             <div className="rounded-3xl items-center justify-center flex ml-20">
@@ -101,7 +101,7 @@ function App() {
 
       <div id="skills"className="bg-black w-full min-h-screen flex flex-col items-center justify-center mt-20">
         <div className="bg-black flex flex-col w-screen h-[1000px] items-center justify-center">
-          <p className="biorhyme-expanded-extrabold text-[10vw] mt-4">Skills</p>
+          <p className="momo-trust-display-regular text-[10vw] mt-4">Skills</p>
           <p className="outfit mb-2">Hardware</p>
           <div className="grid grid-cols-5 gap-8 h-200">
             <div className="bg-[#34b1eb] w-[12vw] h-[12vw] rounded-3xl items-center justify-center flex skillshadow">
@@ -143,7 +143,7 @@ function App() {
 
 
       <div id="projects" className="bg-black w-full min-h-screen flex flex-col items-center justify-center">
-        <p className="biorhyme-expanded-extrabold text-[6vw] mt-4">Projects</p>
+        <p className="momo-trust-display-regular text-[6vw] mt-4">Projects</p>
         <div className="grid grid-cols-3 gap-30 h-[24vw] w-[90vw] justify-items-center mt-4">
           <div className="bg-[#171717] w-[30vw] rounded-3xl items-center justify-center flex flex-col projectshadow">
             <div className="bg-[#595959] w-[28vw] h-[18vw] rounded-2xl items-center justify-center flex mt-[1vw]">
@@ -151,21 +151,21 @@ function App() {
             </div>
             <p className="outfit text-[2vw]">
               <a href="https://github.com/Dongathan-Jong/megablot" target="_blank" className="!underline !text-[#FFFFFF]">Mega Blot</a></p>
-              <p className="outfit text-[1vw] ml-2 mr-2 mb-2">A 30x50 cm pen plotter that has a custom 4 pen tool changer for CMYK plots!</p>
+              <p className="momo-trust-display-regular text-[1vw] ml-2 mr-2 mb-2">A 30x50 cm pen plotter that has a custom 4 pen tool changer for CMYK plots!</p>
           </div>
           <div className="bg-[#171717] w-[30vw] rounded-3xl items-center justify-center flex flex-col projectshadow">
             <div className="bg-[#595959] w-[28vw] h-[18vw] rounded-2xl items-center justify-center flex mt-[1vw]">
               <img src="/assets/pictures/spotify display.jpg" alt="Spotify Display" className="w-9/10 object-contain rounded-3xl"></img>
             </div>
             <p className="outfit text-[2vw]"><a href="https://github.com/Dongathan-Jong/spotifydisplay" target="_blank" className="!underline !text-[#FFFFFF]">Spotify Display</a></p>
-            <p className="outfit text-[1vw] ml-2 mr-2 mb-2">A Spotify Desk Display that shows the currently playing song + artist! Based on the Car Thing.</p>
+            <p className="momo-trust-display-regular text-[1vw] ml-2 mr-2 mb-2">A Spotify Desk Display that shows the currently playing song + artist! Based on the Car Thing.</p>
           </div>
           <div className="bg-[#171717] w-[30vw] rounded-3xl items-center justify-center flex flex-col projectshadow">
             <div className="bg-[#595959] w-[28vw] h-[18vw] rounded-2xl items-center justify-center flex mt-[1vw]">
               <img src="/assets/pictures/duccit.jpg" alt="Ducc It!" className="w-9/10 object-contain rounded-3xl"></img>
             </div>
             <p className="outfit text-[2vw]"><a href="https://github.com/Dongathan-Jong/ducc-it" target="_blank" className="!underline !text-[#FFFFFF]">Ducc It!</a></p>
-            <p className="outfit text-[1vw] ml-2 mr-2 mb-2">A fully custom designed 3D printer that flew to Denver, CO for RMRRF! Under $300 and fully auto-ejects prints.</p>
+            <p className="momo-trust-display-regular text-[1vw] ml-2 mr-2 mb-2">A fully custom designed 3D printer that flew to Denver, CO for RMRRF! Under $300 and fully auto-ejects prints.</p>
           </div>
         </div>
 
