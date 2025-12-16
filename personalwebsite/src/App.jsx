@@ -87,7 +87,7 @@ function App() {
                 <a href="https://hackclub.com/" target="_blank" className="!underline !text-[#919191] hover:!text-red-700 transition">Hack Club</a>
                 {' '}where I ran a{' '}
                 <a href="https://highway.hackclub.com" target="_blank" className="!underline !text-[#919191] hover:!text-red-700 transition">hardware program for teenagers</a>, providing teenagers over the world with $75,000+ worth of hardware grants. Also, I co-hosted the{' '}
-                <a href="https://undercity.hackclub.com/" target="_blank" className="!underline !text-[#919191] hover:!text-red-700 transition">largest hardware hackathon</a> {' '}at Github HQ in San Fransisco!</p>
+                <a href="https://undercity.hackclub.com/" target="_blank" className="!underline !text-[#919191] hover:!text-red-700 transition">largest hardware hackathon</a> {' '}at Github HQ in San Fransisco! Now, I work on the Events team.</p>
               <br></br>
               <p className="montserrat mr-10 ml-10 text-[1.5vw] mb-8">Proficient in Fusion 360, KiCAD, and Arduino, I love making hardware + software projects to make everyday life better. I would love to talk more! Reach out to me at{' '}
                  <a href="mailto:jonathandong2020@gmail.com" className="!underline !text-[#919191] hover:!text-red-700 transition">jonathandong2020@gmail.com</a>
